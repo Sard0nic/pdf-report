@@ -6,12 +6,13 @@ import pandas as pd
 url = "https://apym.hcdn.gob.ar/comisiones-especiales/nazis/inventario"
 
 # Loading Site Content
-text = fu.loadHTML_JS_New(url)
+text = fu.loadHTML_JS(url)
 
 # Parse html in text format and pass to bs
 fu.startProgress('Parsing html files')
 soup = []
 i = 0
+# This for loop creates a BeautifulSoup object for each HTML site returned by "loadHTML_JS" function
 for list in text:
     soup.append(bs(list, 'lxml'))
 

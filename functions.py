@@ -6,7 +6,7 @@ import sys
 # This function loads a site, waits until JavaScript has rendered the whole site and then stores
 # the parsed HTML in a list. Then it goes on to the next page as many times as defined and
 # repeats this process in the end the list with all parsed sides is returned
-def loadHTML_JS_New(url):
+def loadHTML_JS(url):
     # Setting up Selenium
     # Run Firefox in Headless Mode (Invisible)
     options = Options()
