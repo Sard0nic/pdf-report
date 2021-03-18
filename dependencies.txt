@@ -1,3 +1,7 @@
+python 3.9.2
+Mozilla Firefox 86.0
+geckodriver 0.29.0
+
 beautifulsoup4==4.9.3
 bs4==0.0.1
 et-xmlfile==1.0.1
