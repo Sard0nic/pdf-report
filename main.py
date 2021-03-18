@@ -8,11 +8,6 @@ url = "https://apym.hcdn.gob.ar/comisiones-especiales/nazis/inventario"
 # Loading Site Content
 text = fu.loadHTML_JS_New(url)
 
-# Read from textfile
-#textfile = open('html.txt')
-#text = textfile.read().replace('\n', ' ')
-#textfile.close()
-
 # Parse html in text format and pass to bs
 fu.startProgress('Parsing html files')
 soup = []
