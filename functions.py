@@ -20,7 +20,7 @@ def loadHTML_JS(url):
     # Draw progress bar
     startProgress('Loading sites')
 
-    #time.sleep(5)
+    # Load site, save to html list after JavaScript
     html.append(driver.execute_script("return document.documentElement.outerHTML"))
 
     # Value for xpath to find the correct button on the site
@@ -36,8 +36,7 @@ def loadHTML_JS(url):
         button.click()
         btnvalue += 1
 
-        # Get Page Content
-        #time.sleep(5)
+        # Load site, save to html list after JavaScript
         html.append(driver.execute_script("return document.documentElement.outerHTML"))
 
     # End progress bar
